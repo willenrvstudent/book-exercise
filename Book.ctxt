@@ -12,4 +12,6 @@ comment4.params=
 comment4.target=int\ getPages()
 comment5.params=
 comment5.target=void\ printDetails()
-numComments=6
+comment6.params=ref
+comment6.target=void\ setRefNumber(java.lang.String)
+numComments=7

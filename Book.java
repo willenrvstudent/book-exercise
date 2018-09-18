@@ -12,6 +12,7 @@ class Book
     private String author;
     private String title;
     private int pages;
+    private String refNumber = "";
 
     /**
      * Set the author and title fields when this object
@@ -44,6 +45,11 @@ class Book
         System.out.print("Author: " + author);
         System.out.print("Title: " + title);
         System.out.print("# Pages" + pages);
+    }
+    
+    public void setRefNumber(String ref)
+    {
+        refNumber = ref;
     }
 
     // Add the methods here ...
