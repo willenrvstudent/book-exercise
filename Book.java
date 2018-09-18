@@ -38,6 +38,13 @@ class Book
     {
         return pages;
     }
+    
+    public void printDetails()
+    {
+        System.out.print("Author: " + author);
+        System.out.print("Title: " + title);
+        System.out.print("# Pages" + pages);
+    }
 
     // Add the methods here ...
 }
