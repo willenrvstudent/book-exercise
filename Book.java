@@ -49,15 +49,14 @@ class Book
     
     public void setRefNumber(String ref)
     {
-        refNumber = ref;
         
         if (ref.length() > 0)
         {
-            System.out.print(ref);
+            refNumber = ref;
         }
         else
         {
-            System.out.print("ZZZ");
+            System.out.print("Error!!!");
         }
     }
 
