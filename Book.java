@@ -42,14 +42,23 @@ class Book
     
     public void printDetails()
     {
-        System.out.print("Author: " + author);
-        System.out.print("Title: " + title);
-        System.out.print("# Pages" + pages);
+        System.out.println("Author: " + author);
+        System.out.println("Title: " + title);
+        System.out.println("# Pages" + pages);
     }
     
     public void setRefNumber(String ref)
     {
         refNumber = ref;
+        
+        if (ref.length() > 0)
+        {
+            System.out.print(ref);
+        }
+        else
+        {
+            System.out.print("ZZZ");
+        }
     }
 
     // Add the methods here ...
