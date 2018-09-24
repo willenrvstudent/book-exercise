@@ -13,6 +13,7 @@ class Book
     private String title;
     private int pages;
     private String refNumber = "";
+    private int borrowed = 0;
 
     /**
      * Set the author and title fields when this object
@@ -45,6 +46,7 @@ class Book
         System.out.println("Author: " + author);
         System.out.println("Title: " + title);
         System.out.println("# Pages" + pages);
+        System.out.println("Number of Books Borrowed" + borrowed);
     }
     
     public void setRefNumber(String ref)
@@ -59,6 +61,16 @@ class Book
             System.out.print("Error!!! Must be greate than 3 digits");
         }
     }
+    
+    public void borrow(){
+        borrowed++;
+    }
+    
+    public int getBorrowed(){
+        return borrowed;
+    }
+    
+    
 
     // Add the methods here ...
 }
