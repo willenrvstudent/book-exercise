@@ -50,13 +50,13 @@ class Book
     public void setRefNumber(String ref)
     {
         
-        if (ref.length() > 0)
+        if (ref.length() > 3)
         {
             refNumber = ref;
         }
         else
         {
-            System.out.print("Error!!!");
+            System.out.print("Error!!! Must be greate than 3 digits");
         }
     }
 
