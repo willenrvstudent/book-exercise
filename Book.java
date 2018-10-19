@@ -3,12 +3,11 @@
  * This might form part of a larger application such
  * as a library system, for instance.
  *
- * @author (Insert your name here.)
- * @version (Insert today's date here.)
+ * @author Willen O. Leal
+ * @version 10/18/2018
  */
 class Book
 {
-    // The fields.
     private String author;
     private String title;
     private int pages;
@@ -38,17 +37,82 @@ class Book
         System.out.print(title);
     }
     
+    public void setPages(int newPage)
+    {
+        pages = newPage;
+    }
+    
+    public void setAuthor(String newAuthor)
+    {
+        author = newAuthor;
+    }
+    
+    public void setCourseText(boolean isItCourseText)
+    {
+        courseText = isItCourseText;
+    
+    }
+    
+    public void setTitle(String newTitle)
+    {
+        title = newTitle;
+    }
+    
     public int getPages()
     {
         return pages;
+    }
+    
+    public String getAuthor()
+    {
+        return author;
+    }
+    
+    public String getTitle()
+    {
+        return title;
+    }
+    
+    public String getRefNumber()
+    {
+        return refNumber;
+    
+    }
+    
+    public boolean getCourseText()
+    {
+        return courseText;
+    
     }
     
     public void printDetails()
     {
         System.out.println("Author: " + author);
         System.out.println("Title: " + title);
-        System.out.println("# Pages" + pages);
-        System.out.println("Number of Books Borrowed" + borrowed);
+        System.out.println("# Pages: " + pages);
+        System.out.println("Number of Books Borrowed: " + borrowed);
+    }
+    
+    public void printDetailsV2()
+    {
+        if(refNumber.length() > 0)
+        {
+            System.out.println("Author: " + author);
+            System.out.println("Title: " + title);
+            System.out.println("# Pages: " + pages);
+            System.out.println("Number of Books Borrowed: " + borrowed);
+            System.out.println("Reference Number: " + refNumber);
+        }
+        else
+        {
+           System.out.println("Author: " + author);
+           System.out.println("Title: " + title);
+           System.out.println("# Pages: " + pages);
+           System.out.println("Number of Books Borrowed: " + borrowed);
+           System.out.println("Reference Number: ZZZ");  
+        
+        }
+    
     }
     
     public void setRefNumber(String ref)
@@ -76,7 +140,4 @@ class Book
         return courseText; 
     }
     
-    
-
-    // Add the methods here ...
 }
